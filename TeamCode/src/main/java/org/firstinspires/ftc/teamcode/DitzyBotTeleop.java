@@ -43,8 +43,8 @@ public class DitzyBotTeleop extends OpMode
 {
     // Declare OpMode members.
     private ElapsedTime runtime = new ElapsedTime();
-    private DcMotor leftDrive = null;
-    private DcMotor rightDrive = null;
+    private DcMotor leftDrive = gamepad1.left_stick_y;
+    private DcMotor rightDrive = gamepad1.right_stick_y;
 
     /*
      * Code to run ONCE when the driver hits INIT
